@@ -1,0 +1,94 @@
+@import "~antd/dist/antd.less";
+/* 系统主题颜色 */
+@color-primary: #333E7D;
+
+@primary-color: @color-primary;
+
+@layout-header-height: 40px;
+@line-height-base: 18px;
+@border-radius-base: 14px;
+@height-base: 26px;
+
+.ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.avatar-uploader>.ant-upload {
+  width: 128px;
+  height: 128px;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+  margin: 0 auto !important;
+}
+
+#__next {
+  height: 100%;
+}
+
+*,
+p+p {
+  margin: 0;
+  padding: 0;
+}
+
+.ant-btn:hover>a:only-child,
+.ant-btn:focus>a:only-child {
+  color: @primary-color;
+}
+
+.content-container {
+  .top-bg {
+    height: 450px;
+    position: relative;
+    background: linear-gradient(180deg, #737797, #666987);
+
+    >.code-img {
+      position: absolute;
+      left: 20%;
+      top: 52%;
+      width: 369px;
+      height: 179px;
+
+      >img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    >.error-img {
+      position: absolute;
+      right: 15%;
+      top: 35%;
+      width: 748px;
+      height: 461px;
+
+      >img {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .bottom-bg {
+    padding: 11px 20%;
+
+    >.text {
+      font-size: 14px;
+      font-family: PingFangSC, PingFangSC-Regular;
+      font-weight: 400;
+      text-align: left;
+      color: #62616b;
+      line-height: 35px;
+      margin-bottom: 31px;
+    }
+
+    .ant-btn {
+      height: 36px;
+      line-height: 36px;
+      border-radius: 30px;
+    }
+  }
+}

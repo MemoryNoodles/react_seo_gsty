@@ -1,0 +1,300 @@
+.hide {
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+.left-title {
+  font-size: 16px;
+  font-family: PingFang, PingFang-SC;
+  font-weight: SC;
+  text-align: left;
+  color: #333333;
+  line-height: 22px;
+  margin: 10px 0;
+}
+
+.left-title::before {
+  content: " ";
+  display: inline-block;
+  width: 6px;
+  height: 12px;
+  background: #333e7d;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.match-list {
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .match-item.hide {
+    height: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    border-bottom: none !important;
+  }
+
+  .match-item {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    align-items: center;
+
+    >.match-type-img {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+    }
+
+    >.match-item-date-time {
+      font-size: 14px;
+      font-family: PingFangSC, PingFangSC-Regular;
+      font-weight: 400;
+      text-align: center;
+      color: #333333;
+      line-height: 15px;
+      text-align: center;
+      margin-left: 15px;
+
+      >p:nth-child(2) {
+        font-size: 12px;
+        color: #999;
+        margin-top: 2px;
+      }
+
+      >p {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    >.league-name {
+      font-size: 14px;
+      font-family: PingFangSC, PingFangSC-Regular;
+      font-weight: 400;
+      text-align: center;
+      line-height: 15px;
+      width: 15%;
+
+      >a {
+        color: #333333;
+      }
+
+      >a:hover {
+        color: @primary-color;
+      }
+    }
+
+    >.current-time {
+      font-size: 14px;
+      font-family: PingFang, PingFang-SC;
+      font-weight: SC;
+      text-align: center;
+      color: #333e7d;
+      line-height: 15px;
+      width: 7%;
+    }
+
+    >.team-info {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      >.score {
+        width: 15%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        font-family: PingFang, PingFang-SC;
+        font-weight: SC;
+        text-align: center;
+        color: #333e7d;
+        line-height: 15px;
+
+        >span {
+          display: inline-block;
+        }
+
+        >span:first-child {
+          text-align: right;
+        }
+
+        >span:last-child {
+          text-align: left;
+        }
+
+        >span:not(:nth-child(2)) {
+          flex: 1;
+        }
+      }
+
+      >.home-name {
+        flex: 1;
+        text-align: right;
+        font-size: 14px;
+        font-family: PingFangSC, PingFangSC-Regular;
+        font-weight: 400;
+        line-height: 15px;
+        vertical-align: middle;
+        display: flex;
+        flex-direction: row;
+
+        >span {
+          vertical-align: middle;
+        }
+
+        >span:nth-child(1) {
+          flex: 1;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: inline-block;
+          // max-width: 150px;
+        }
+
+        >.team-avatar {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: #d8d8d8;
+          border-radius: 50%;
+          vertical-align: middle;
+          margin-left: 5px;
+
+          >img {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        a {
+          color: #333333;
+        }
+
+        a:hover {
+          color: @primary-color;
+        }
+      }
+
+      >.gueest-name {
+        flex: 1;
+        text-align: left;
+        font-size: 14px;
+        font-family: PingFangSC, PingFangSC-Regular;
+        font-weight: 400;
+        line-height: 15px;
+        vertical-align: middle;
+        display: flex;
+        flex-direction: row;
+
+        >span {
+          vertical-align: middle;
+        }
+
+        >span:nth-child(2) {
+          flex: 1;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: inline-block;
+          max-width: 150px;
+        }
+
+        >.team-avatar {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          background: #d8d8d8;
+          border-radius: 50%;
+          vertical-align: middle;
+          margin-right: 5px;
+
+          >img {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        a {
+          color: #333333;
+        }
+
+        a:hover {
+          color: @primary-color;
+        }
+      }
+    }
+
+    >.match-action {
+      font-size: 12px;
+
+      >a {
+        color: #dedede;
+      }
+
+      >a:hover {
+        color: @primary-color;
+      }
+    }
+  }
+
+  .match-item:not(:last-child) {
+    border-bottom: 1px solid #dedede;
+  }
+}
+
+
+
+
+.rank-list-wrap {
+  .rank-list-head {
+    border-bottom: 1px solid #dedede;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    >span {
+      flex: 1;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  .rank-list-body {
+    .rank-list-row {
+      border-bottom: 1px solid #dedede;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      >p {
+        margin: 10px 0 10px 0;
+        flex: 1;
+        text-align: center;
+        color: #333333;
+
+        >a {
+          color: #333333;
+        }
+
+        >a:hover {
+          color: @primary-color;
+        }
+
+        // margin-bottom: 10px;
+      }
+    }
+
+    .rank-list-row.hide {
+      border-bottom: none !important;
+    }
+  }
+}

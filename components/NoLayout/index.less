@@ -1,0 +1,228 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.topic-pagenation-container {
+  display: flex;
+  margin: 30px 0;
+  justify-content: center;
+}
+
+.main-inside-container {
+  // display: flex;
+  max-width: 1100px;
+  padding: 0 15px;
+  width: 100%;
+  /* height: 2000px; */
+  /* background-color: aqua */
+}
+.menu-group-left {
+  display: none;
+  
+}
+.ant-menu-inline {
+  min-width: 236px !important;
+}
+.ant-drawer-body {
+  padding:0 !important;
+}
+  /* Home Part CSS */
+.home-container{
+  
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+  .list-item-container {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    max-width: 740px;
+    background: #ffffff;
+    .topic-channel-button {
+      margin-right: 5px;
+      margin-bottom: 5px;
+      height: 28px;
+      font-size: 14px
+    }
+  }
+  .home-right-container {
+    margin-top: 30px;
+    width: 300px;
+    display: flex;
+    float: right;
+    flex-direction: column;
+    .user-info-container {
+      display: flex;
+      padding-bottom: 10px;
+      align-items: center;
+      border-bottom: 1px solid #dddddd;
+      &--right {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    
+    .hot-topic-container {
+      margin-top: 20px;
+      padding-left: 5px;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 1px solid #dddddd;
+      .hot-title-container {
+        color: #52c41a;
+        display: flex;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        .title-start-block {
+          height: 26px;
+          width: 5px;
+          background-color: #52c41a;
+          margin-right: 10px;
+        }
+      }
+      .hot-list-container {
+        list-style: none;
+        padding-left: 15px;
+      }
+    }
+    .ad-container {
+      width: 100%;
+
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .topic-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    .left-item {
+      margin-right: 15px;
+    }
+    .right-item {
+      max-width: 72%;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+      .desc {
+        color: #979797;
+        font-size: 16px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+      .bottom-info {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        .bottom-tag {
+          border-radius: 3px;
+        }
+        .info-item {
+          margin: 0 5px;
+        }
+      }
+    }
+    .comment-info-container {
+      position: absolute;
+      right: 0;
+      border-radius: 25px;
+      padding: 0 15px;
+      height: 25px;
+      line-height: 25px;
+      background-color: #dddddd;
+      color: #ffffff;
+    }
+  }
+}
+
+  /* TopicDetail Part CSS */
+.topic-detail-container {
+  .detail-title {
+      margin: 30px 0;
+      font-size: 46px;
+      word-wrap: break-word;
+  }
+  .main-info-container {
+      display: flex;
+      position: relative;
+      .user-avatar {
+          margin-right: 10px;
+          
+      }
+      .praise-control-container {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+      }
+  }
+  .main-control-container {
+    padding-left: 60px;
+
+  }
+  .topic-content-container {
+      font-size: 18px;
+      color: black;
+      word-wrap: break-word;
+  }
+  .comment-list {
+      margin-top: 20px;
+  }
+  .share-icon {
+    margin-left: 10px;
+  }
+}
+
+
+  /* TopicEdit Part CSS */
+.editer-container {
+  width: 740px;
+  margin-top: 40px !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .home-container .topic-container .right-item .bottom-info .hide-item {
+      display: none;
+  }
+  .menu-group-left {
+    display: block;
+  }
+}
+
+  
+  
+  
+@media screen and (max-width: 1100px) {
+  .home-container .home-right-container {
+    display: none;
+  }
+}
+
+.login-form {
+  margin-top: 150px !important;
+  width: 300px;
+
+}
+  .login-form-forgot {
+  float: right;
+}
+ .login-form-button {
+  width: 100%;
+}

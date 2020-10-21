@@ -1,0 +1,233 @@
+.team-details-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  >.team-details-left {
+    flex: 1;
+
+    >.team-info-box {
+      background-color: #fff;
+      border-radius: 8px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      >.team-name-avater {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        >img {
+          display: inline-block;
+          height: 60px;
+        }
+
+        >.team-name {
+          >p {
+            margin: 0;
+          }
+
+          >h2 {
+            font-size: 16px;
+            font-family: PingFangSC, PingFangSC-Medium;
+            font-weight: 500;
+            text-align: center;
+            color: #333333;
+            line-height: 22px;
+            margin: 0;
+          }
+
+          >p {
+            font-size: 12px;
+            font-family: PingFangSC, PingFangSC-Regular;
+            font-weight: 400;
+            text-align: center;
+            color: #999999;
+            line-height: 17px;
+          }
+        }
+      }
+
+      >.team-about {
+        flex: 1.8;
+        border-left: 1px solid #dedede75;
+
+        >p:not(:last-child) {
+          border-bottom: 1px solid #dedede75;
+        }
+
+        >p {
+          margin: 0;
+          display: flex;
+          flex-direction: row;
+
+          >.th {
+            width: 76px;
+            background: #f8f8f8;
+            padding: 10px;
+            font-size: 14px;
+            font-family: PingFang, PingFang-SC;
+            font-weight: SC;
+            text-align: center;
+            color: #333333;
+            line-height: 20px;
+          }
+
+          >.td {
+            flex: 1;
+            font-size: 14px;
+            font-family: PingFang, PingFang-SC;
+            font-weight: SC;
+            text-align: left;
+            color: #333333;
+            line-height: 20px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    >.team-match-result {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #fff;
+
+      >.box-head {
+        border-bottom: 1px solid #dedede75;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        >.filter-box {
+          >* {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      >.result-table {
+        margin-top: 10px;
+
+        .ant-table-tbody>tr>td {
+          padding: 11px 0;
+
+          .name-logo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+
+            >.logo {
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              border-radius: 8px;
+              margin-top: -4px;
+              margin-right: 5px;
+
+              >img {
+                display: inline-block;
+                width: 100%;
+              }
+            }
+
+            >span {
+              vertical-align: middle;
+            }
+          }
+        }
+
+        .ant-table-thead>tr>th {
+          background-color: #fff;
+          font-size: 14px;
+          font-family: PingFangSC, PingFangSC-Regular;
+          font-weight: 400;
+          text-align: left;
+          color: #999999;
+          line-height: 20px;
+          padding: 16px 0;
+        }
+
+        .ant-pagination {
+          >.ant-pagination-item {
+            border-radius: 4px;
+            margin: 0 2.5px;
+          }
+
+          >.ant-pagination-item-active,
+          >.ant-pagination-item:hover {
+            background-color: @primary-color;
+
+            >a {
+              color: #fff;
+            }
+          }
+
+          .ant-select-selector,
+          .ant-pagination-options-quick-jumper input {
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  >.team-details-right {
+    flex: 1;
+    max-width: 360px;
+    margin-left: 10px;
+
+    >.team-desc {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 10px;
+
+      >.box-head {
+        border-bottom: 1px solid #dedede75;
+      }
+
+      >.team-desc-text {
+        font-size: 14px;
+        font-family: PingFangSC, PingFangSC-Regular;
+        font-weight: 400;
+        text-align: left;
+        color: #333333;
+        line-height: 30px;
+        padding: 10px;
+      }
+    }
+
+
+  }
+
+
+  .left-title {
+    font-size: 16px;
+    font-family: PingFang, PingFang-SC;
+    font-weight: SC;
+    text-align: left;
+    color: #333333;
+    line-height: 22px;
+    padding: 0 0 10px 0;
+    margin: 0;
+
+  }
+
+  .left-title::before {
+    content: " ";
+    display: inline-block;
+    width: 6px;
+    height: 12px;
+    background: #333e7d;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,45 @@
+.about-site-wrap {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: flex-start;
+
+  >.about-site-tab-box {
+    max-width: 200px;
+    flex: 1;
+    margin-right: 20px;
+    background-color: #fff;
+    height: 100%;
+
+    >.tab-item {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+      margin: 10px -3px 0;
+      //   background-color: @primary-color;
+      //   margin: 10px -5px 0;
+      font-size: 14px;
+      font-family: PingFangSC, PingFangSC-Regular;
+      font-weight: 400;
+      text-align: center;
+      color: #333333;
+      line-height: 20px;
+
+      transition: 0.3s;
+    }
+
+    >.tab-item.active,
+    >.tab-item:hover {
+      background-color: @primary-color;
+      margin: 10px -3px 0;
+      color: #fff;
+    }
+  }
+
+  >.about-site-content {
+    flex: 1;
+    background-color: #fff;
+    height: 100%;
+  }
+}

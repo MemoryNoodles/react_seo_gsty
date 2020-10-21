@@ -1,0 +1,64 @@
+.teamBase{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // align-items: center;
+    background-image: url("/static/image/detail_bg.png");
+    padding:16px 0;
+    height: 140px;
+
+    .teamInfo{
+        text-align: center;
+       img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+       }
+       p{
+           text-align: center;
+           margin-top: 8px;
+           color:#fff;
+           font-size: 14px;
+           font-weight: 500;
+       }
+    }
+
+    .battleInfo{
+        text-align: center;
+        margin:10px 120px 0;
+
+
+        .status{
+            font-size: 14px;
+            color:#fff;
+            background-color: rgba(255,255,255,0.3);
+            padding: 0 10px;
+            height: 25px; line-height: 25px;
+            display: inline-block; 
+            border-radius: 12px;
+            text-align: center;
+        }
+        p{
+            margin:10px 0;
+            font-size: 30px;
+            font-weight: 600;
+            text-align:center;
+            color: #ffffff;
+            line-height: 30px;
+        }
+        span{
+            opacity: 0.7;
+            font-size: 14px;
+            font-weight: 400;       
+            color: #ffffff;
+            line-height: 20px;
+        }
+    }
+}
+
+.tab_content{
+    background-color: #fff;
+    .ant-tabs-nav{
+        margin-bottom: 0px !important;
+    }
+}
